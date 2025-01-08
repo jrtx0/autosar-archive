@@ -1,0 +1,181 @@
+# 2024.05.01 (Version 1.7)
+## Added
+
+* A "Test Connection" button to the connection info dialog.
+
+## Changed
+
+* "Preferences" has been renamed to "Settings" on macOS.
+
+## Fixed
+
+* A visual glitch on the Welcome Window pane splitter in macOS.
+
+# 2024.01.11 (Version 1.6, Build 2)
+## Fixed
+
+* Issues with SCRAM and PLAIN SASL authentication.
+
+# 2024.01.06 (Version 1.6, Build 1)
+## Added
+
+* The Timestamp Lua class.
+
+## Changed
+
+* Improved record read throughput & reduced memory utilization.
+
+## Fixed
+
+* macOS: Jump Popover timestamps' seconds components are truncated.
+
+# 2023.12.03 (Version 1.5, Build 1)
+## Added
+
+* Improvements to Lua error reporting.
+* Jump to Line in the Scripting Window.
+* Support for creating, updating and deleting schemas.
+
+## Fixed
+
+* Double & triple click to select words in the Scripting Window on
+  Windows and Linux.
+* Partition starvation issue when jumping to old offsets.
+
+# 2023.11.12 (Version 1.4, Build 1)
+## Added
+
+* Documentation for many new Lua functions.
+* Improved Lua script error reporting output.
+* Initial support for rendering data from Lua scripts.
+
+## Fixed
+
+* A crash during update on macOS.
+* Changelog dark-mode compatibility on macOS.
+* Improved robustness in the face of errors.
+
+# 2023.10.30 (Version 1.3, Build 1)
+## Fixed
+
+* SSL Certs can be provided without associated SSL Keys. This makes it
+  possible to provide custom CA certs without associated keys.
+* Updates are now checked on boot on Linux and Windows when enabled.
+
+# 2023.10.15 (Version 1.2, Build 1)
+## Added
+
+* Franz for Windows BETA release.
+* Support for looking up broker and topic config docs.
+* Support for updating broker and topic configs.
+
+## Fixed
+
+* A memory leak.
+
+# 2023.09.21 (Version 1.1, Build 1)
+## Added
+
+* Support for running scripts on already-loaded data from the
+  Scripting Window.
+* Support for connecting to Kafka via an HTTP proxy.
+
+## Changed
+
+* Franz now requires macOS 13+.
+* The Jump Popover defaults to "recent" instead of "latest".
+
+# 2023.08.30 (Version 1.0, Build 8)
+## Added
+
+* Support for providing custom SSL keys and certificates.
+* Topic partition replication information to the Topic Detail view.
+
+## Changed
+
+* Group offset reset menu items are disabled for non-empty groups.
+
+## Fixed
+
+* Broker metadata loading for topics whose leader nodes are
+  unavailable.
+* Topics can be opened from the Consumer Group Detail view with
+  filtering applied.
+
+## Notes
+
+* As of the next version, Franz will require macOS 13+.
+
+# 2023.07.14 (Version 1.0, Build 7)
+## Added
+
+* Support for LZ4 decompression.
+* Support for Snappy decompression.
+* Support for Zstandard decompression.
+* Schema Registry support for Protocol Buffers.
+
+# 2023.02.17 (Version 1.0, Build 6)
+## Added
+
+* Support for configuring per-connection defaults from Preferences.
+
+## Changed
+
+* Total group lag is now displayed in the Workspace sidebar.  It's
+  possible to customize these stats from the Preferences Window.
+
+# 2023.01.20 (Version 1.0, Build 5)
+## Added
+
+* The Consumer Groups tab to the Topic Detail view.
+* The Schema Detail view.
+* Tab support for Workspaces.
+* Support for decoding committed offsets from Lua.
+
+## Changed
+
+* The Record Table now loads the latest 20 for each partition on open.
+* The Record Detail viewer opens to the tab corresponding to the
+  clicked column.
+* Double-clicking the dividers between Record Table columns now sizes
+  the respective columns to fit according to the longest value (best
+  effort).
+* Record Table key & value columns are now truncated at 4k bytes
+  instead 300 bytes.
+* Config Tables now support copying keys & values.
+
+# 2023.01.06 (Version 1.0, Build 4)
+## Added
+
+* Schema Registry support.
+* A Record detail viewer.  Double-click records in the Topic Records
+  Table to see their data in full.
+
+## Changed
+
+* The Records Table "Reset..." button has been renamed to "Jump..."
+  to make it clear that it's not performing a destructive action.
+* LZ4 decompression performance is improved.
+* Avro decoding now supports optional fields.
+
+# 2022.12.14 (Version 1.0, Build 3)
+## Added
+
+* Amazon MSK IAM auth.
+* SCRAM SHA256 and SHA512 auth.
+* Seek to timestamp.
+* LZ4 support.
+* Apache Avro support.
+* MessagePack support.
+* Updates and improvements to the Manual.
+
+# 2022.11.21 (Version 1.0, Build 2)
+## Fixed
+
+* An issue with setting the port number on connections.
+* An issue with downloading updates.  You may have to download this
+  update manually from the website at https://franz.defn.io.
+
+# 2022.11.20 (Version 1.0, Build 1)
+
+* Initial BETA release.
